@@ -41,6 +41,17 @@
     height:100%;
     object-fit: cover;
   }
+  #navbar{
+    background: black;
+    text-align: center;
+    height:4.5rem;
+    z-index: 5;
+    grid-column: 1/7;
+    height:4.5rem;
+    background: rgb(5,5,5);
+    padding:0px;
+    text-align: center;
+  }
 
   #glitch01{
     max-width: 100%;
@@ -261,6 +272,7 @@
     position: absolute;
     backface-visibility: hidden;
     object-fit: cover;}
+
   #work .front img{
     z-index: 2;
   }

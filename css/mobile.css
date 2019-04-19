@@ -149,7 +149,7 @@ h1,h2,h3,p{
   padding: 0.2em 1rem;
 }
 
-#work li h1{
+#work li h1 h3{
   font-size: 2rem;
 }
 
