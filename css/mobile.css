@@ -174,30 +174,35 @@ h1,h2,h3,p{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: black
   }
 
 
 
 #contact .box{
-  background-color: rgba(30,30,30);
+  background-color: rgba(10,10,10);
   padding:0.5rem;
-  color: #ff7b29;
+  color: white;
   font-size: 1.5rem
 }
 
 #contact .box a{
   font-weight: normal;
   font-size: 1rem;
+  color: white;
+
 }
 
 #contact .box a:visited{
-  color:#ff7b29;
+  color: white;
+
 }
 
 
 #foo{
+  background-color: black;
   background: #ff7b29;
-  color: black;
+  color: white;
   height:55px;
   font-weight: bold;
   }
@@ -275,14 +280,13 @@ h1,h2,h3,p{
   margin-top: 3rem;
   font-size: 2rem;
   font-family: Futura,'IBM Plex Sans', sans-serif;
-  color:black;
+  color:white;
 
 }
 
 #writer p{
   font-size: 1.5rem;
-  color:black;
-
+  color:white;
 }
 
 #about #selfdes{
