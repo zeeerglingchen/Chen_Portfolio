@@ -153,6 +153,13 @@ h1,h2,h3,p{
   font-size: 2rem;
 }
 
+#work li h1{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Futura,'IBM Plex Sans', sans-serif;
+
+}
+
 #work li p{
   padding-bottom: 1rem;
 
@@ -200,9 +207,8 @@ h1,h2,h3,p{
 
 
 #foo{
-  background-color: black;
   background: #ff7b29;
-  color: white;
+  color: black;
   height:55px;
   font-weight: bold;
   }
