@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <link rel = "stylesheet" href = "css/html5reset.css">
+    <link rel = "stylesheet" href = "css/mobile.css">
+    <link rel = "stylesheet" href = "css/desktop.css">
+    <link rel = "stylesheet" href = "css/tablet.css">    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+  </head>
+
+
+  <body>
+    <header id = "chen" class = "grid">
+      <div id = "acess" class="skip-main" >
+        <a href="#main">Skip to main content</a>
+      </div>
+
+      <div id = "navbar" class = "nav">
+        <input type = "checkbox" id = "frame">
+        <label class = "GALLERY" for = "frame">&#9776;</label>
+        <nav class = "listname">
+            <ul>
+              <li id = "zerg"><img src = "images/zerg.svg" alt = "starcraft zerg logo"></li>
+              <li><a href = "index.html" target="_blank">UX DESIGN</a></li>
+              <li><a href = "architecturaldesign.html" target="_blank">ARCHITECTURE</a></li>
+              <li><a class = "current_page" href = "gallery.html" target="_blank">GALLERY</a></li>
+              <li><a href = "about.html" target="_blank">ABOUT</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main id = 'main' class = "waterfall-out">
+        <div id = "gallerymask">
+        </div>
+
+        <div class = "video-inner">
+          <video  class = "video" id = "videoid">
+            <source src = "video/demo02.mp4" type="video/mp4"  >
+            Your browser does not support the video tag.
+          </video>
+          <div class = "control">
+            <div class= "progress_bg">
+              <div class= "progress_bar"></div>
+            </div>
+            <div class = "button">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </div>
+        </div>
+
+        <section  class = " waterfall-inner">
+
+            <div class = "card card1">
+              <img src = "andywarhol/_78829933_fe299647-8675-4e74-bd5e-40d4ef932994.jpg" alt = "project 12" id = "gallery1" onclick = "CallOut(this)">
+            </div>
+
+              <div class = "card card1">
+                <img src = "andywarhol/Andy_Warhol.jpg" alt = "project 12" id = "gallery2" onclick = "CallOut(this)">
+              </div>
+
+
+              <div class = "card card1">
+                <img src = "andywarhol/Andy-Warhol_Space-Fruit-Still-Lifes-Cantaloupes-II.jpg" alt = "project 12" id = "gallery3" onclick = "CallOut(this)">
+              </div>
+
+              <div class = "card card1">
+                <img src = "andywarhol/andy-warhol-artwork-large-111427.jpg" alt = "project 12" id = "gallery4" onclick = "CallOut(this)">
+              </div>
+
+              <div class = "card card1">
+                <img src = "andywarhol/Andy-Warhol-Mao.jpg" alt = "project 12" id = "gallery5" onclick = "CallOut(this)">
+              </div>
+
+              <div class = "card card1">
+                <img src = "andywarhol/KGrHqVHJFIFEeW_1wHjBRHoR8kkP_60_1_1024x1024.jpeg" alt = "project 12" id = "gallery6" onclick = "CallOut(this)">
+              </div>
+
+              <div class = "card card1">
+                <img src = "andywarhol/Marilyn-by-Andy-Warhol.jpg" alt = "project 12" id = "gallery7" onclick = "CallOut(this)">
+              </div>
+
+              <div class = "card card1">
+                <img src = "andywarhol/photo.jpeg" alt = "project 12" id = "gallery8" onclick = "CallOut(this)">
+              </div>
+
+              <div class = "card card1">
+                <img src = "andywarhol/warhol_andy_1.jpg" alt = "project 12" id = "gallery9" onclick = "CallOut(this)">
+              </div>
+
+              <div class = "card card1">
+                <img src = "andywarhol/zoom_1437667131_moma_warhol_untitledfrommarilyn@2x.1@2x.jpg" alt = "project 12" id = "gallery10" onclick = "CallOut(this)">
+              </div>
+
+        </section>
+    </main>
+
+    <footer id = "foo" >
+      <div id = "bottom_info" class= "grid">
+        <div>
+          <p>Designed by <a herf = "#">Chenyang Lyu</a></p>
+        </div>
+        <div>
+          <p>@All Rights Reserved 2019</p>
+        </div>
+      </div>
+    </footer>
+    <script src = "js/html5video.js"></script>
+    <script src = "js/work_display.js"></script>
+    <script src = "js/sticky_nav.js"></script>
+    <script src = "js/callout.js"></script>
+
+  </body>
+</html>

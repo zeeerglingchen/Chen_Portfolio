@@ -1,0 +1,402 @@
+*{
+  font-family: 'IBM Plex Sans', sans-serif
+}
+@media(min-width:1024px){
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 360px) 1fr
+  }
+  #introduction{
+    display: block;
+
+  }
+
+  #carousel{
+    display:inline-block;
+    grid-column: 1/4;
+    width:100%;
+    height:100%;
+    position:relative;
+  }
+
+  .carousel_container{
+    height:100%;
+  }
+
+  .carousel_ul{
+    list-style: none;
+    height:100%;
+    transition: transform 250ms ease-in;
+  }
+
+  .carousel_li{
+    width:100%;
+    height:100%;
+    position: absolute;
+  }
+
+  .carouselimg{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+  }
+
+  #glitch01{
+    max-width: 100%;
+    max-height: 100%;
+    animation: glitch01 infinite;
+    animation-duration: 1.5s;
+
+  }
+  @keyframes glitch01{
+    0%{
+      clip: rect(42px, 3000px, 100px, 0px);
+    }
+    20%{
+      clip: rect(102px, 3000px, 120px, 0px);
+    }
+    4%{
+      clip: rect(280px, 3000px, 320px, 0px);
+    }
+    60%{
+      clip: rect(320px, 3000px, 360px, 0px);
+    }
+    80%{
+      clip: rect(400px, 3000px, 500px, 0px);
+    }
+    100%{
+      clip: rect(682px, 3000px, 720px, 0px);
+    }
+
+  }
+  #glitch02{
+    max-width: 100%;
+    max-height: 100%;
+    animation: glitch02 infinite;
+    animation-duration: 2s;
+
+  }
+  @keyframes glitch02{
+    0%{
+      clip: rect(442px, 3000px, 500px, 0px);
+    }
+    20%{
+      clip: rect(502px, 3000px, 620px, 0px);
+    }
+    4%{
+      clip: rect(680px, 3000px, 720px, 0px);
+    }
+    60%{
+      clip: rect(20px, 3000px, 116px, 0px);
+    }
+    80%{
+      clip: rect(100px, 3000px, 192px, 0px);
+    }
+    100%{
+      clip: rect(200px, 3000px, 320px, 0px);
+    }}
+
+  #img2{
+    z-index: 2; }
+  #img3{
+    z-index: 0;
+  }
+
+  .carousel_button{
+    position: absolute;
+    font-size: 1.5rem;
+    top:90%;
+    right:43%;
+    background: #ff7b29;
+    border-radius: 100%;
+    border:0;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor:pointer;
+    z-index: 5;
+  }
+
+  .carousel_button--right{
+    right:58%
+  }
+  .carousel_button img{
+    margin-top: .2rem;
+    }
+
+  .carousel_nav{
+    position: absolute;
+    z-index: 2;
+    top:3%;
+    right:50%;
+  }
+
+  #introduction .headcontent #name{
+    font-family: Futura;
+    font-size:2rem;
+    font-weight:400;
+  }
+
+  #introduction{
+    margin-top: 15rem;
+    grid-column: 4/7;
+  }
+
+  .link{
+    margin-top: 2rem;
+  }
+
+/* navigation bar */
+
+  #navbar{
+    z-index: 5;
+    grid-column: 1/7;
+    height:4.5rem;
+    background: rgb(5,5,5);
+    padding:0px;
+    text-align: center;
+  
+  }
+
+
+  .listname{
+    margin-top: 1rem;
+    max-height:4rem;}
+  /* ???? */
+
+  .listname ul li{
+    display: inline;
+  }
+
+  .listname li a{
+    font-size: 1rem;
+    padding: 2rem;
+    margin:auto 1.6rem;
+    display:inline-block;
+    color: white;
+    font-family: Futura,'IBM Plex Sans', sans-serif;
+  }
+
+  .listname #zerg img{
+    position: absolute;
+    display: inline-block;
+    float: left;
+    width:1.6rem;
+  }
+
+  .listname li a:visited{
+    color: white;
+  }
+
+  .listname li a:hover{
+    font-size: 1.05rem;
+    font-weight: medium;
+    color: #ff7b29;
+  }
+
+  label{
+    display: none;
+  }
+  .sticky{
+    position: fixed;
+    width: 100%;
+  }
+
+
+
+  #work{
+    background: rgba(20,20,20);
+
+  }
+
+
+
+/* work display */
+
+  #work ul{
+    background: rgba(20,20,20);
+    grid-column: 2/6;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2rem 0 ;
+  }
+
+
+  #work .arc-ul{
+    margin: 4rem 0rem 4rem 0rem;
+  }
+
+  #work li{
+    margin:1rem;
+    background: white;
+    text-align: left;
+    cursor: pointer;
+    list-style: none;
+    border: 5px solid black;
+  }
+  #work .card_content{
+    color:black;
+  }
+
+
+/* filpcard */
+  .arc-grid{
+    perspective: 2000px;
+  }
+
+  #work .arc-li{
+    width:90%;
+    height:500px;
+    list-style: none;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  /* li does help scale the ul up */
+
+
+  #work .front img, #work .back, .arc-grid li{
+    width:100%;
+    height:100%;
+    position: absolute;
+    backface-visibility: hidden;
+    object-fit: cover;}
+  #work .front img{
+    z-index: 2;
+  }
+
+  #work .back{
+    background-color: #ff7b29;
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+  #work .back h3{
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  #work .back p{
+    margin-left: 2rem;
+  }
+  .arc-li:hover {
+    transform: rotateY(180deg);
+  }
+
+
+
+  /* contact css */
+
+
+  #writer h2{
+    font-size: 3rem;
+    font-family: Futura,'IBM Plex Sans', sans-serif;
+  }
+
+  #writer p{
+    font-size: 1.5rem;
+  }
+
+
+  #contact .box{
+    grid-column: 1/7;
+  }
+
+  #bottom_info div{
+    grid-column: 1/7;
+  }
+
+  .photo{
+    grid-column: 3/5;
+
+  }
+  .back{
+    margin-bottom: .5rem;
+  }
+
+  #about #selfdes{
+    background: #ff7b29;
+    text-align: left;
+    grid-column: 3/5;
+    padding: 1.5rem 0rem;
+    color:white;
+  }
+
+
+  #about #selfdes p{
+    margin: 1rem auto;
+  }
+
+  #contact_content {
+    margin-top: 2rem;
+  }
+
+
+  #contact_content #resume,#address{
+    grid-column: 2/5;
+  }
+
+  /* gallery */
+  .waterfall-out{
+    display:block;
+    margin: 5rem 0;
+  }
+
+  .waterfall-inner{
+    column-count: 4;
+    column-gap: 1rem;
+    column-fill: auto;
+    margin: 0 2rem;
+  }
+
+
+
+  .waterfall-inner .card img {
+    width:100%;
+    object-fit: cover;
+    margin: .4rem 0;
+    cursor: pointer;
+  }
+  .waterfall-inner .card img:hover {
+    border: 3px solid #ff7b29;
+  }
+  /* mask */
+
+  #gallerymask{
+    background: black;
+    position: absolute;
+    z-index: 2;
+
+  }
+
+  #gallerymask img{
+    margin-top:5rem;
+    width:500px;
+    height:auto;
+    border: 3px solid white;
+  }
+
+
+  #gallerymask .cap{
+    font-size: 1rem;
+    color:rgba(255,255,255,0.8);
+  }
+
+  #gallerymask #close {
+    margin-top: 4rem;
+    position:absolute;
+    font-size: 1.7rem;
+    background: rgba(0,0,0);
+    color:rgba(255,255,255);
+    width: 30px;
+    height:30px;
+    border-radius: 100%;
+    cursor: pointer;}
+
+
+    /* video edit */
+    .video{
+      width:100%;
+    }
+
+
+
+}
