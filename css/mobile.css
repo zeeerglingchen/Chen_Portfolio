@@ -285,13 +285,13 @@ h1,h2,h3,p{
   margin-top: 3rem;
   font-size: 2rem;
   font-family: Futura,'IBM Plex Sans', sans-serif;
-  color:white;
+  color:black;
 
 }
 
 #writer p{
   font-size: 1.5rem;
-  color:white;
+  color:black;
 }
 
 #about #selfdes{
