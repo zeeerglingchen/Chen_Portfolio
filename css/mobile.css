@@ -98,6 +98,10 @@ input:checked ~ .listname {
   color: white;
 }
 
+.listname li a{
+  color: white;
+}
+
 .listname li a:hover{
   font-size: 1.1rem;
   color: #ff7b29;
