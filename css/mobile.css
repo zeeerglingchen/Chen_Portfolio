@@ -228,6 +228,11 @@ h1,h2,h3,p{
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+
+#foo p a{
+  color:black;
+}
+
 #navbar .current_page {
   font-weight: bold;
   color: #ff7b29;
