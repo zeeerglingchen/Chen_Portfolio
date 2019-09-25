@@ -9,16 +9,30 @@
     <link rel = "stylesheet" href = "css/tablet.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
   </head>
 
 
-  <body>
+  <body id = 'body'>
     <header class = "grid">
+      <div id = 'navigation'>
 
-      <div id = "acess" class="skip-main" >
-        <a href="#main">Skip to main content</a>
-      </div>
+        <div id = 'logo'>
+          <img src = "images/chenlogo-05.svg" alt = "looks like a bulb">
+          <p>selected<br> works <br> from <br>2015 - 2019</p>
+        </div>
+
+        <div id = 'wording'>
+          <p> chenyanglyu <br>ux designer / former architect </p> 
+        </div>
+
+        <div id = 'link'>
+          <a class = "current_page" href = "index.html" target="_blank">| work </a> 
+          <a href = "about.html" target="_blank"> | about </a>
+        </div>
+        
+      </div>    
 
       <div id = "carousel">
 
@@ -50,138 +64,120 @@
             </ul>
           </div>
       </div>
+      
 
-        <div id = "introduction">
-          <div class = "headcontent">
-            <h1 id="name"> CHENYANG LYU</h1>
-            <p> UX/UI Designer</p>
-          </div>
-          <div class = "outside">
-            <div class = "link">
-              <a href = "https://www.facebook.com/profile.php?id=100010209062872" target="_blank" aria-label="Find me on Facebook"><i class = "fab fa-facebook fa-lg"></i></a>
-              <a href = "https://www.linkedin.com/in/chenyang-lyu-503b09128/" target="_blank" aria-label="Find me on linkedin"><i class = "fab fa-linkedin fa-lg"></i></a>
-            </div>
-            <div class = "intro_content">
-              <h2>Hi, my name is Chenyang</h2>
-              <p> Introduction of CHENYANG </p>
-            </div>
-          </div>
+      <div id = "introduction">
+        <div class = "headcontent">
+          <p>Hi, My name is Chenyang. I am passionate about finding the value of human relationships and collaborating with technology to deliver meaningful interactions.</p>
         </div>
-
-      <div id = "navbar" class = "nav">
-        <input type = "checkbox" id = "frame">
-        <label class = "UX DESIGN" for = "frame">&#9776;</label>
-        <nav class = "listname">
-            <ul>
-              <li id = "zerg"><img src = "images/zerg.svg" alt = "starcraft zerg logo"></li>
-              <li><a class = "current_page" href = "index.html" target="_blank">UX DESIGN</a></li>
-              <li><a href = "architecturaldesign.html" target="_blank">ARCHITECTURE</a></li>
-              <li><a href = "gallery.html" target="_blank">GALLERY</a></li>
-              <li><a href = "about.html" target="_blank">ABOUT</a></li>
-            </ul>
-        </nav>
+  
+        <div class = "intro_content">
+          <p></p>
+        </div>
       </div>
 
     </header>
 
 
     <main id = 'main'>
+
+      <div class = 'title'>
+        <p>| UX/UI DESIGN </p>>
+      </div>
+
       <section id = "work" class = "grid">
-        <ul>
-          <li onmouseover="change(this)" onmouseleave="unchange(this)">
-            <div class = "card">
-              <img src = "images/project02.jpg" alt = "project 12" >
-              <div class = "card_content">
-                <h3>01 Project </h3>
-                <p>introduction of project 01</p>
-              </div>
-            </div>
-          </li>
-          <li onmouseover="change(this)" onmouseleave="unchange(this)">
-            <div class = "card">
-              <img src = "images/12.jpg" alt = "project 12">
-              <div class = "card_content">
-                <h3>02 Project </h3>
-                <p>introduction of project 02</p>
-              </div>
-            </div>
-          </li>
-          <li onmouseover="change(this)" onmouseleave="unchange(this)">
-            <div class = "card">
-              <img src = "images/project03.jpg" alt = "project 12"  >
-              <div class = "card_content">
-                <h3>03 Project </h3>
-                <p>introduction of project 03</p>
-              </div>
-            </div>
-          </li>
-          <li onmouseover="change(this)" onmouseleave="unchange(this)">
-            <div class = "card">
-              <img src = "images/project04.jpg" alt = "project 12">
-              <div class = "card_content">
-                <h3>04 Project </h3>
-                <p>introduction of project 04</p>
-              </div>
-            </div>
-          </li>
-          <li onmouseover="change(this)" onmouseleave="unchange(this)">
-            <div class = "card">
-              <img src = "images/project06.jpg" alt = "project 12">
-              <div class = "card_content">
-                <h3>05 Project </h3>
-                <p>introduction of project 05</p>
-              </div>
-            </div>
-          </li>
-          <li onmouseover="change(this)" onmouseleave="unchange(this)">
-            <div class = "card">
-              <img src = "images/project05.jpg" alt = "project 12">
-              <div class = "card_content">
-                <h3>06 Project </h3>
-                <p>introduction of project 06</p>
-              </div>
-            </div>
-          </li>
-          <li onmouseover="change(this)" onmouseleave="unchange(this)">
-            <div class = "card">
-              <img src = "images/project07.jpg" alt = "project 12">
-              <div class = "card_content">
-                <h3>07 Project </h3>
-                <p>introduction of project 07</p>
-              </div>
-            </div>
-          </li>
-          <li onmouseover="change(this)" onmouseleave="unchange(this)">
-            <div class = "card">
-              <img src = "images/project08.jpg" alt = "project 12">
-              <div class = "card_content">
-                <h3>08 Project </h3>
-                <p>introduction of project 08</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
+        <div id = "workcontainer">
 
+          <a href = "perch.html" id = 'perch' target="_blank">
+            <div class= 'workhover'>
+                <div class = 'item_container'>
 
-      <section id = "contact" class = "grid">
-        <div class = "box">
-          <h2>Contact</h2>
-          <p><a href="mailto:lvchen@umich.edu">Email me</a></p>
+                  <div class = 'item_meta'>
+                      <span class = 'item_number binding'> 01. </span>
+                      <span class = 'item_name binding'> Perch  </span>
+                      <div class = 'item_bar'></div>
+                  </div>
+
+                  <p class = 'item_des binding'>Perch is an online talent solution for academic research groups, university departments <br> and programs, and industrial R&D companies.</p> 
+
+                  <span class = 'item_ex binding'> Explore </span>
+                </div> 
+            </div>
+            <div class = 'workbackground'>
+                <p class = 'item_name_back binding'> perch connection </p>
+                <img class = 'cover_img' src = "images/perch/perch_logo_画板 1 副本 2.png" alt = "this is my 2019 summer internship project" >
+            </div>
+          </a>
+
+          <a href = "perch.html" id = 'perch' target="_blank">
+            <div class= 'workhover'>
+                <div class = 'item_container'>
+
+                  <div class = 'item_meta'>
+                      <span class = 'item_number binding'> 02. </span>
+                      <span class = 'item_name binding'>Radar </span>
+                      <div class = 'item_bar'></div>
+                  </div>
+                  <p class = 'item_des binding'>
+                    RADAR is a web brower extension that save online shoppers time on finding the best stuff <br> and the best deal.</p> 
+
+                  <span class = 'item_ex binding'> Explore </span>
+                </div> 
+            </div>
+            <div class = 'workbackground'>
+                <p class = 'item_name_back binding'> radar </p>
+                <img class = 'cover_img' src = "images/radar/未标题-1_画板 1 副本 3.png" alt = "this is my 2019 summer internship project" >
+            </div>
+          </a>
+
+          <a href = "perch.html" id = 'perch' target="_blank">
+            <div class= 'workhover'>
+                <div class = 'item_container'>
+
+                  <div class = 'item_meta'>
+                      <span class = 'item_number binding'> 03. </span>
+                      <span class = 'item_name binding'>WhaleDesign </span>
+                      <div class = 'item_bar'></div>
+                  </div>
+                  <p class = 'item_des binding'>Whale Design is an online design compeition plaftorm for freelance designers.</p> 
+                  <span class = 'item_ex binding'> Explore </span>
+                </div> 
+            </div>
+            <div class = 'workbackground'>
+                <p class = 'item_name_back binding'> whaledesign </p>
+                <img class = 'cover_img' src = "images/jingyu/未标题-1_画板 1 副本 4.png" alt = "this is my 2019 summer internship project" >
+            </div>
+          </a>
+
+          <a href = "perch.html" id = 'perch' target="_blank">
+            <div class= 'workhover'>
+                <div class = 'item_container'>
+
+                  <div class = 'item_meta'>
+                      <span class = 'item_number binding'> 04. </span>
+                      <span class = 'item_name binding'> Fresh </span>
+                      <div class = 'item_bar'></div>
+                  </div>
+
+                  <p class = 'item_des binding'>Whale Design is an online design compeition plaftorm for freelance designers.</p> 
+
+                  <span class = 'item_ex binding'> Explore </span>
+                </div> 
+            </div>
+            <div class = 'workbackground'>
+                <p class = 'item_name_back binding'>daily fresh </p>
+                <img class = 'cover_img' src = "images/jingyu/未标题-1_画板 1 副本 4.png" alt = "this is my 2019 summer internship project" >
+            </div>
+          </a>
         </div>
       </section>
+
+      <div class = 'title'>
+          <p>| ARCHITECTURAL DESIGN </p>>
+      </div>
+
     </main>
 
-    <footer id = "foo" >
-      <div id = "bottom_info" class= "grid">
-        <div>
-          <p>Designed by <a href = "#">Chenyang Lyu</a></p>
-        </div>
-        <div>
-          <p>@All Rights Reserved 2019</p>
-        </div>
-      </div>
-    </footer>
     <script src = "js/work_display.js"></script>
     <script src = "js/carousel.js"></script>
     <script src = "js/sticky_nav.js"></script>

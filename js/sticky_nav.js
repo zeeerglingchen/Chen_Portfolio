@@ -1,7 +1,7 @@
 window.onscroll = function(){sticky_function()
 }
 
-var nav = document.querySelector("#navbar")
+var nav = document.getElementById("#navigation")
 var dis = nav.offsetTop
 if (dis == 0){
   nav.classList.add("sticky")

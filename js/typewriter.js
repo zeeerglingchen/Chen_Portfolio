@@ -16,3 +16,11 @@ function typewriter() {
 }
 
 window.onload = typewriter()
+// have a js file "onload"
+// onload is a function
+
+window.onload = function(){
+  typewriter()
+}
+
+// save it to another file

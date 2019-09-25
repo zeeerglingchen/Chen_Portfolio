@@ -1,20 +1,16 @@
 
-// console.log(window.innerWidth)
-// console.log(window.innerHeight)
-// console.log(mask)
-
-var body = document.querySelector("body")
-console.log(body.width)
+// var body = document.querySelector("body")
+// console.log(body.width)
 
 
-function change(li){
- li.style.margin = "0.5rem";
- li.style.transition = "500ms";
- }
+// function change(li){
+//  li.style.margin = "0.5rem";
+//  li.style.transition = "500ms";
+//  }
 
-function unchange(li){
-li.style.margin = "1rem";
+// function unchange(li){
+// li.style.margin = "1rem";
 
 
 
-}
+// }
